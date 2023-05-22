@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #sidebar {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: #C9324C;
+    left: -300px;
+    transition: .4s;
+    z-index: 1; /* Add a higher z-index to make the text overlay above the menu */
+
+  }
+  
+  #sidebar ul li {
+    list-style: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 26px 24px;
+  }
+  
+  #sidebar .toggle-btn {
+    position: absolute;
+    top: 30px;
+    left: 330px;
+  }
+  
+  .toggle-btn span {
+    width: 45px;
+    height: 4px;
+    background: black;
+    display: block;
+    margin-top: 4px;
+  }
+  
+  #sidebar.active {
+    left: 0;
+  }
+  
+  .frontpage-image {
+    /* position: relative; */
+    width: 100%;
+    height: 100vh;
+    background-image: url("images/front\ page\ image.png");
+    background-size: cover;
+    background-position: center;
+  }
+  .fuglesangso-image {
+    /* position: relative; */
+    width: 100%;
+    height: 100vh;
+    background-image: url("images/Fuglesangsø-column.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .lovbakken-image {
+    /* position: relative; */
+    width: 100%;
+    height: 100vh;
+    background-image: url("images/Løvbakken-column.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .hundeskov-image {
+    /* position: relative; */
+    width: 100%;
+    height: 100vh;
+    background-image: url("images/hundeskov-column.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .all-pages-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 36px;
+
+  }
+  
+
+  /* ---------three section next to each other-------- */
+  .image-container {
+    display: flex;
+  }
+  
+  .image-box {
+    position: relative;
+    width: 33.33%;
+
+
+
+  }
+  
+  .image-box img {
+    width: 100%;
+    height: 100%;
+
+  }
+  
+  .image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 18px;
+  }
+  
+  .image-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .image-text p {
+    margin-top: 10px;
+  }
+  
+  .image-text a {
+    color: white;
+    text-decoration: none;
+  }
+
+
+  /* <!-- ------Image Gallery-------- --> */
+  
+
+
+
+
+  /* --------- fuglesangsø--------- */
+  .container{
+display: flex;
+justify-content: space-around;
+
+  }
+
+  .left-side{
+flex: 1;
+  }
+.image1{
+
+}
+.images2and3{
+font-size: large;
+/*  */
+}
+
+  .right-side{
+flex: 1;
+  }
