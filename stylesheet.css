@@ -138,20 +138,46 @@
   .container{
 display: flex;
 justify-content: space-around;
-
+background-color: #C9324C;
   }
 
   .left-side{
-flex: 1;
-  }
-.image1{
+    background-color: #a3727a;
+    width: 50%;
+    margin: 0%;
+    padding: 0%;
 
-}
-.images2and3{
-font-size: large;
-/*  */
-}
+  }
+
+
+
+  .invisible-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: 3rem;
+  }
+  .invisible-box img{
+    /* width: 50%; */
+    
+    background-color: rgb(83, 204, 154);
+  }
+
+  .wide-image {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  
+  .half-image {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+  
+
 
   .right-side{
-flex: 1;
+    background-color:aqua;
+    width: 50%;
+
   }
