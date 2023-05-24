@@ -165,18 +165,18 @@
 
 .invisible-box img {
   /* width: 50%; */
-  margin: 17px;
+  margin: 10px;
   background-color: rgb(0, 0, 0);
 }
 
 .wide-image {
   flex-basis: 100%;
-  max-width: 92%;
+  max-width: 75%;
 }
 
 .half-image {
   flex-basis: 50%;
-  max-width: 45%;
+  max-width: 35%;
 }
 
 
