@@ -2,12 +2,30 @@
   margin: 0;
   padding: 0;
 }
+#nav-color-fuglsangso #sidebar{
+  background-color: #527E2C;
+}
+#nav-color-fuglsangso span{
+  /* background-color: #527E2C; */
+}
+
+
+#nav-color-lovbakken #sidebar{
+background-color: #C9324C;
+}
+
+
+
+
+#nav-color-hundeskov #sidebar{
+background-color: #4D327D;
+}
 
 #sidebar {
   position: fixed;
   width: 300px;
   height: 100%;
-  background: #C9324C;
+  /* background-color: #C9324C; */
   left: -300px;
   transition: .4s;
   z-index: 1;
@@ -40,40 +58,32 @@
   left: 0;
 }
 
-.frontpage-image {
-  /* position: relative; */
-  width: 100%;
-  height: 100vh;
-  background-image: url("images/front\ page\ image.png");
-  background-size: cover;
-  background-position: center;
-}
 
-.fuglesangso-image {
-  /* position: relative; */
+.frontpage-image, .fuglesangso-image, .lovbakken-image, .hundeskov-image{
   width: 100%;
   height: 100vh;
-  background-image: url("images/Fuglesangsø-column.jpg");
   background-size: auto;
   background-position: center;
 }
 
+.frontpage-image {
+  background-image: url("images/front\ page\ image.png");
+
+}
+
+.fuglesangso-image {
+  background-image: url("images/Fuglesangsø-column.jpg");
+
+}
+
 .lovbakken-image {
-  /* position: relative; */
-  width: 100%;
-  height: 100vh;
   background-image: url("images/Løvbakken-column.jpg");
-  background-size: cover;
-  background-position: center;
+
 }
 
 .hundeskov-image {
-  /* position: relative; */
-  width: 100%;
-  height: 100vh;
   background-image: url("images/hundeskov-column.jpg");
-  background-size: cover;
-  background-position: center;
+
 }
 
 .all-pages-text {
@@ -139,14 +149,21 @@
 
 
 /* --------- fuglesangsø--------- */
-.container {
+.container-fuglesangso, .container-hundeskov, .container-lovbakken {
   display: flex;
   justify-content: space-around;
-  background-color: #C9324C;
 }
-
-.left-side {
+.container-fuglesangso{
   background-color: #4D327D;
+
+}
+.container-lovbakken{
+background-color: #527E2C;
+}
+.container-hundeskov{
+background-color: #C9324C;
+}
+.left-side {
   width: 50%;
   margin: 0%;
   padding: 0%;
@@ -182,7 +199,6 @@
 
 
 .right-side {
-  background-color: #4D327D;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -202,17 +218,11 @@ font-weight: 400;
 }
 
 .describtion-1 {
-  /* display: flex;
-flex-wrap: wrap; */
-  background-color: #4D327D;
   margin: 30px;
   color: white;
 }
 
 .describtion-2 {
-  /* display: flex;
-flex-wrap: nowrap; */
-  background-color: #4D327D;
   margin: 30px;
   color: white;
 
