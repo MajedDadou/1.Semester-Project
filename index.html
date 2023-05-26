@@ -2,95 +2,191 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">
-    <title>Gullestrup Nature</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>Gullestrup Nature</title>
 </head>
 
 <body>
-    <nav>
-        <div id="sidebar">
-            <div class="toggle-btn" onclick="show()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="fuglesangso.html">Fuglsangsø</a></li>
-                <li><a href="lovbakken.html">Løvbakken</a></li>
-                <li><a href="hundeskov.html">Hundeskov</a></li>
-            </ul>
+  <nav class="color-frontpage">
+    <div id="sidebar">
+      <div class="toggle-btn" onclick="show()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul>
+        <li><a class="link-style" href="index.html">Home</a></li>
+        <li><a class="link-style" href="fuglesangso.html">Fuglsangsø</a></li>
+        <li><a class="link-style" href="lovbakken.html">Løvbakken</a></li>
+        <li><a class="link-style" href="hundeskov.html">Hundeskov</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section>
+      <div class="frontpage-image">
+        <div class="all-pages-text">
+          <h1>Gullestrup</h1>
+          <p>Natur i Gullestrup</p>
         </div>
-    </nav>
+      </div>
+    </section>
 
-    <main>
-        <section>
-        <div class="frontpage-image">
-            <div class="all-pages-text">
-              <h1>Your Text Here</h1>
-              <p>Additional text or description</p>
+
+    <!-- /* ---------three section next to each other-------- */ -->
+
+    <section>
+      <div class="image-container">
+        <div class="image-box">
+          <a href="fuglesangso.html">
+            <img src="images/fuglsangsø-test.jpg" alt="Fuglesangsø-column">
+            <div class="image-text">
+              <h2>Fuglsangsø</h2>
             </div>
+          </a>
+        </div>
+        <div class="image-box">
+          <a href="lovbakken.html">
+            <img src="images/løvbakken-final.jpg" alt="Løvbakken-column">
+            <div class="image-text">
+              <h2>Løvbakken</h2>
+              <!-- <p><a href="your-link-2">Link 2</a></p> -->
+            </div>
+          </a>
+        </div>
+        <div class="image-box">
+          <a href="hundeskov.html">
+            <img src="images/hundeskov-final-image.jpg" alt="hundeskov-column">
+            <div class="image-text">
+              <h2>Hundeskov</h2>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------Image Gallery-------- -->
+    <section>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="images/dog-on-beach.jpg" alt="Picture 4">
+
+
+        </div>
+        <div class="gallery-item">
+          <img src="images/natur-center.jpg" alt="Picture 4">
+
+        </div>
+        <div class="gallery-item">
+          <img src="images/grill place.jpg" alt="Picture 4">
+
+
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/park.jpg" alt="Picture 4">
+
+
+        </div>
+        <div class="gallery-item">
+          <img src="images/rowing on lake.jpg" alt="Picture 4">
+
+
+        </div>
+        <div class="gallery-item">
+          <img src="images/dog in park.jpeg" alt="Picture 4">
+
+
+        </div>
+    </section>
+
+    <!-- --------informations/text-------- -->
+    <section>
+      <div class="text-container">
+        <div class="text-box" id="background-1">
+          <div class="info-text">
+            <h2>Nature's Oasis:</h2>
+            <p>Et fredfyldt tilflugtssted Omfavn Gullestrups naturlige skønhed, hvor grønne landskaber og rolige
+              omgivelser skaber en oase for naturelskere. Fordyb dig i det frodige grønne område, hvad enten det er en
+              afslappet gåtur gennem indbydende parker eller et øjebliks eftertanke ved de glinsende søer.</p>
+
           </div>
-        </section>
+        </div>
+        <div class="text-box" id="background-2">
+          <div class="info-text">
+            <h2>Modern Comforts at Your Fingertips:</h2>
+            <p>Mens Gullestrup kan prale af en fredfyldt atmosfære, tilbyder den også alle de moderne bekvemmeligheder,
+              du ønsker. Lokale butikker imødekommer dine daglige behov og sikrer, at bekvemmelighed aldrig er langt
+              væk.</p>
+          </div>
+        </div>
+        <div class="text-box" id="background-3">
+          <div class="info-text">
+            <h2>A Haven for Canine Companions</h2>
+            <p>Gullestrup er ikke kun en indbydende by for mennesker, men også et fristed for vores elskede lodne
+              venner. Med sine store grønne områder, vandrestier og parker er Gullestrup et ideelt miljø for hunde at
+              strejfe og lege.</p>
 
-        
-        <!-- /* ---------three section next to each other-------- */ -->
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section>
-            <div class="image-container">
-                <div class="image-box">
-                  <a href="fuglesangso.html">
-                    <img src="images/Fuglesangsø-column.jpg" alt="Fuglesangsø-column">
-                    <div class="image-text">
-                      <h2>Image 1 Text</h2>
-                    </div>
-                  </a>
-                </div>
-                <div class="image-box">
-                  <a href="lovbakken.html">
-                    <img src="images/Løvbakken-column.jpg" alt="Løvbakken-column">
-                    <div class="image-text">
-                      <h2>Image 2 Text</h2>
-                      <!-- <p><a href="your-link-2">Link 2</a></p> -->
-                    </div>
-                  </a>
-                </div>
-                <div class="image-box">
-                  <a href="hundeskov.html">
-                    <img src="images/hundeskov-column.jpg" alt="hundeskov-column">
-                    <div class="image-text">
-                      <h2>Image 3 Text</h2>
-                    </div>
-                  </a>
-                </div>
-              </div>
-        </section>
 
-        <!-- ------Image Gallery-------- -->
-<section>
+
+
+  </main>
+
+
+
+
+
+
+  <footer class="color-frontpage">
+    <div class="footer-container">
+   
+      <div class="footer-column">
+        <h2>Find OS</h2>
+        <h3><a class="link-style" href="https://www.facebook.com/VisitHerning">Facebook</a></h3>
+        <h3><a class="link-style" href="https://www.instagram.com/visit_herning/">Instagram</a></h3>
+      </div>
+      <div class="footer-column">
+        <h2>Lokationer</h2>
+        <h3><a class="link-style" href="https://goo.gl/maps/YYN55qiYkbQSuQhc8">Løvbakken</a> </h3>
+        <h3><a class="link-style" href="https://goo.gl/maps/f5vKHppG3LjXvvU46">Fuglsangsø</a> </h3>
+        <h3><a class="link-style" href="https://goo.gl/maps/S6Xbb1TsCgrTzxFs6">Hundeskov</a> </h3>
+      </div>
+    </div>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h2>Websites To Visit</h2>
+        <h3><a class="link-style" href="https://www.visitherning.dk/">Visit Herning</a></h3>
+        <h3><a class="link-style" href="http://genbrugsplads.info/ngo/book.php">Camping Booking</a></h3>
+
+      </div>
+      <div class="footer-column">
+        <h2>Tilmed Nyhedsbrev</h2>
+
+        <form>
+          <input type="text" placeholder="Your Name">
+          <input type="email" placeholder="Your Email">
+          <input type="submit" value="Subscribe">
+        </form>
+      </div>
+    </div>
     
-</section>
+  </footer>
 
-
-    </main>
-
-
-
-
-
-
-    <footer>
-
-    </footer>
-    <script>
-        // ------for the menu----
-        function show() {
-            document.getElementById('sidebar').classList.toggle('active');
-        }
-      </script>
+  <script>
+    // ------for the menu----
+    function show() {
+      document.getElementById('sidebar').classList.toggle('active');
+    }
+  </script>
 </body>
 
 </html>

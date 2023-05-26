@@ -2,25 +2,50 @@
   margin: 0;
   padding: 0;
 }
-#nav-color-fuglsangso #sidebar{
+
+.color-fuglsangso #sidebar {
   background-color: #527E2C;
 }
-#nav-color-fuglsangso span{
+
+.color-fuglsangso span {
   /* background-color: #527E2C; */
 }
 
 
-#nav-color-lovbakken #sidebar{
-background-color: #C9324C;
+.color-lovbakken #sidebar {
+  background-color: #C9324C;
+}
+
+.color-hundeskov #sidebar {
+  background-color: #4D327D;
+}
+
+.color-frontpage #sidebar {
+  background-color: #C9324C;
+}
+
+.color-frontpage span {
+  background-color: #ffffff;
 }
 
 
 
+.color-frontpage{
+  background-color: #C9324C;
 
-#nav-color-hundeskov #sidebar{
-background-color: #4D327D;
 }
+.color-fuglsangso{
+  background-color: #4D327D;
 
+}
+.color-hundeskov{
+  background-color: #C9324C;
+
+}
+.color-lovbakken{
+  background-color: #527E2C;
+
+}
 #sidebar {
   position: fixed;
   width: 300px;
@@ -38,6 +63,7 @@ background-color: #4D327D;
   color: #fff;
   font-size: 20px;
   padding: 26px 24px;
+  margin-bottom: 1.2rem;
 }
 
 #sidebar .toggle-btn {
@@ -59,30 +85,34 @@ background-color: #4D327D;
 }
 
 
-.frontpage-image, .fuglesangso-image, .lovbakken-image, .hundeskov-image{
+.fuglesangso-image,
+.lovbakken-image,
+.hundeskov-image,
+.frontpage-image {
   width: 100%;
   height: 100vh;
-  background-size: auto;
+  background-size: cover;
   background-position: center;
 }
 
 .frontpage-image {
+  background-color: #303030;
   background-image: url("images/front\ page\ image.png");
 
 }
 
 .fuglesangso-image {
-  background-image: url("images/Fuglesangsø-column.jpg");
+  background-image: url("images/fuglsangsø-test.jpg");
 
 }
 
 .lovbakken-image {
-  background-image: url("images/Løvbakken-column.jpg");
+  background-image: url("images/løvbakken-final.jpg");
 
 }
 
 .hundeskov-image {
-  background-image: url("images/hundeskov-column.jpg");
+  background-image: url("images/hundeskov-final-image.jpg");
 
 }
 
@@ -96,6 +126,48 @@ background-color: #4D327D;
   font-size: 36px;
 
 }
+
+
+/* --------Links style------ */
+.link-style {
+  background-image: linear-gradient(to right,
+      #000000,
+      #000000 50%,
+      #ffffff 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Open Sans', sans-serif;
+
+  font-weight: 400;
+  font-size: x-large
+}
+
+.link-style:before {
+  content: '';
+  background: #000000;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.link-style:hover {
+  background-position: 0;
+}
+
+.link-style:hover::before {
+  width: 100%;
+}
+
 
 
 /* ---------three section next to each other-------- */
@@ -128,7 +200,7 @@ background-color: #4D327D;
 }
 
 .image-text h2 {
-  font-size: 24px;
+  font-size: 3vw;
   margin-bottom: 10px;
 }
 
@@ -144,25 +216,53 @@ background-color: #4D327D;
 
 /* <!-- ------Image Gallery-------- --> */
 
+.gallery {
+  /* margin-top: 5px; */
+  background-color: #C9324C;
+  display: flex;
+  /* flex-wrap: wrap; */
+
+}
+
+.gallery-item {
+  position: relative;
+  width: calc(33.33% - 10px);
+  margin: 5px;
+}
+
+
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+}
+
+
 
 
 
 
 /* --------- fuglesangsø--------- */
-.container-fuglesangso, .container-hundeskov, .container-lovbakken {
+.container-fuglesangso,
+.container-hundeskov,
+.container-lovbakken {
   display: flex;
   justify-content: space-around;
 }
-.container-fuglesangso{
+
+.container-fuglesangso {
   background-color: #4D327D;
 
 }
-.container-lovbakken{
-background-color: #527E2C;
+
+.container-lovbakken {
+  background-color: #527E2C;
 }
-.container-hundeskov{
-background-color: #C9324C;
+
+.container-hundeskov {
+  background-color: #C9324C;
 }
+
 .left-side {
   width: 50%;
   margin: 0%;
@@ -187,7 +287,7 @@ background-color: #C9324C;
 }
 
 .wide-image {
-  flex-basis: 100%;
+  flex-basis: 100vh;
   max-width: 75%;
 }
 
@@ -210,9 +310,9 @@ background-color: #C9324C;
 
 .right-side p {
   font-family: 'Open Sans', sans-serif;
-font-size: 20px;
-line-height: 50px;
-font-weight: 400;
+  font-size: 20px;
+  line-height: 50px;
+  font-weight: 400;
 
 
 }
@@ -226,4 +326,209 @@ font-weight: 400;
   margin: 30px;
   color: white;
 
+}
+
+/* index information section */
+.text-container {
+  display: flex;
+}
+
+.text-box {
+  position: relative;
+  width: 33.33%;
+  /* margin-top: 5px; */
+
+
+}
+
+.info-text h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.info-text p {
+  margin-top: 10px;
+  font-family: 'Open Sans', sans-serif;
+  word-spacing: 0.1rem;
+  margin: 30px;
+  color: #fff;
+  text-align: center;
+}
+
+
+/* .info-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 18px;
+} */
+
+#background-1 {
+  background-color: #4D327D;
+}
+
+#background-2 {
+  background-color: #527E2C;
+}
+
+#background-3 {
+  background-color: #C9324C;
+}
+
+
+/* -------Footer---- */
+footer {
+  margin-top: 5px;
+  background-color: #C9324C;
+  padding: 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+justify-content: space-around;}
+
+.footer-column {
+  flex: 0 0 25%;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-family: 'Playfair Display', serif;
+
+}
+
+h3 {
+  color: #fff;
+  font-size: 16px;
+  margin: 5px 0;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+form {
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"] {
+  display: block;
+  width: 90%;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+
+@media only screen and (max-width: 980px) {
+
+
+
+  .gallery {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+
+  .gallery-item {
+    flex-direction: column;
+    display: flex;
+    width: 70%;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: 100%;
+  }
+  
+
+  .image-container{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+  .image-box{
+    display: flex;
+    width: 100%;
+  }
+  .image-text h2{
+    font-size: xx-large;
+  }
+
+  .text-container{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+  .text-box{
+    display: flex;
+    width: 100%;
+  }
+  
+
+
+
+.container-fuglesangso, .container-hundeskov, .container-lovbakken{
+  flex-direction: column;
+  /* background-color: #000000; */
+
+}
+  .invisible-box {
+    display: flex;
+    width: 100%;
+    margin: 50%;
+    margin-bottom: 0;
+  }
+  
+  
+  .wide-image {
+    max-width: 100%;
+  }
+  
+  .half-image {
+    max-width: 100%;
+  }
+  
+  
+  
+  .right-side {
+    width: 100%;
+  }
+  
+  .right-side h2 {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .right-side p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 50px;
+    font-weight: 400;
+  
+  
+  }
+
+
+
+
+
+
+
+
+}
+@media (min-width: 768px) {
+  .footer-column {
+    flex: 0 0 25%;
+  }
 }

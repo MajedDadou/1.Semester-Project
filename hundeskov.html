@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <nav id="nav-color-hundeskov">
+    <nav class="color-hundeskov">
         <div id="sidebar">
             <div class="toggle-btn" onclick="show()">
                 <span></span>
@@ -18,11 +18,10 @@
                 <span></span>
             </div>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="fuglesangso.html">Fuglsangsø</a></li>
-                <li><a href="lovbakken.html">Løvbakken</a></li>
-                <li><a href="hundeskov.html">Hundeskov</a></li>
-            </ul>
+                <li><a class="link-style" href="index.html">Home</a></li>
+                <li><a class="link-style" href="fuglesangso.html">Fuglsangsø</a></li>
+                <li><a class="link-style" href="lovbakken.html">Løvbakken</a></li>
+                <li><a class="link-style" href="hundeskov.html">Hundeskov</a></li>
         </div>
     </nav>
 
@@ -30,8 +29,8 @@
         <section>
             <div class="hundeskov-image">
                 <div class="all-pages-text">
-                    <h1>Your Text Here</h1>
-                    <p>Additional text or description</p>
+                    <h1>Hundeskov</h1>
+
                 </div>
             </div>
         </section>
@@ -39,13 +38,13 @@
 
 
         <!-- --------Describtion section -->
-        <section>
+        <section >
             <div class="container-hundeskov">
                 <div class="left-side">
                     <div class="invisible-box">
-                        <img src="images/front page image.png" alt="Wide Image" class="wide-image">
-                        <img src="images/front page image.png" alt="Half Image 1" class="half-image">
-                        <img src="images/front page image.png" alt="Half Image 2" class="half-image">
+                        <img src="images/dog park.jpg" alt="Wide Image" class="wide-image">
+                        <img src="images/dog in park.jpeg" alt="Half Image 1" class="half-image">
+                        <img src="images/park.jpg" alt="Half Image 2" class="half-image">
                     </div>
                 </div>
 
@@ -53,23 +52,17 @@
                 <div class="right-side">
                     <div class="describtion-1">
                         <h2>Bekrivelse</h2>
-                        <p>Fuglsang Sø er 800 meter lang, 450 meter bred og 6 meter på det dybeste sted. Området er et
-                            ideelt sted for lange ture, badning, fiskeri og vandsport som f.eks roning og windsurfing.
+                        <p>Hundeskoven ligger ud mod Langengevej og for enden af Kantorvænget hvor der også er mulighed
+                            for parkering.
                             <br>
                             <br>
-                            Herning Kommune er grundejer ved Fuglsang Sø. Der er gratis fiskeri med fiskestang fra
-                            bredden på den markerede strækning i perioden fra 1. oktober til 31. maj, med gyldigt
-                            fiskekort: www.fisketegn.dk. Der må fiskes med båd uden motor, når du er mere end 50 meter
-                            fra bredden.
+                            Det indhegnede område er på 5 hektar, hvilket svarer til ca. 7 fodboldbaner.
+
                         </p>
                     </div>
                     <div class="describtion-2">
-                        <h2>Fisketegn</h2>
-                        <p>Mindstemål og fredningstider skal overholdes. Fisk under mindstemål skal genudsættes hurtigst
-                            muligt. Gedden er fredet i april måned og store gedder skal i videst mulig omfang
-                            genudsættes.
-                            Se mere information på www.fvm.dk Obligatorisk fiskekort er påkrævet: www.fisketegn.dk
-                            Fiskeri i Herning Kommune.</p>
+                        <h2>Fakta</h2>
+                        <p>Parkering addresse: Snerlens Kvarter 5, 7400 Herning, Denmark <br>Størrelse på området i hektar: 4 <br>Antal parkeringspladser: 10 <br>Ansvarlig: Naturstyrelsen <br>Skiltning: Kun skilt ind til parkeringspladsen, men ikke fra parkering til hundeskovens indgang.</p>
                     </div>
 
                 </div>
@@ -89,12 +82,40 @@
 
 
 
-
-
-
-    <footer>
-
-    </footer>
+    <footer class="color-hundeskov">
+        <div class="footer-container">
+       
+          <div class="footer-column">
+            <h2>Find OS</h2>
+            <h3><a class="link-style" href="https://www.facebook.com/VisitHerning">Facebook</a></h3>
+            <h3><a class="link-style" href="https://www.instagram.com/visit_herning/">Instagram</a></h3>
+          </div>
+          <div class="footer-column">
+            <h2>Lokationer</h2>
+            <h3><a class="link-style" href="https://goo.gl/maps/YYN55qiYkbQSuQhc8">Løvbakken</a> </h3>
+            <h3><a class="link-style" href="https://goo.gl/maps/f5vKHppG3LjXvvU46">Fuglsangsø</a> </h3>
+            <h3><a class="link-style" href="https://goo.gl/maps/S6Xbb1TsCgrTzxFs6">Hundeskov</a> </h3>
+          </div>
+        </div>
+        <div class="footer-container">
+          <div class="footer-column">
+            <h2>Websites To Visit</h2>
+            <h3><a class="link-style" href="https://www.visitherning.dk/">Visit Herning</a></h3>
+            <h3><a class="link-style" href="http://genbrugsplads.info/ngo/book.php">Camping Booking</a></h3>
+    
+          </div>
+          <div class="footer-column">
+            <h2>Tilmed Nyhedsbrev</h2>
+    
+            <form>
+              <input type="text" placeholder="Your Name">
+              <input type="email" placeholder="Your Email">
+              <input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+        
+      </footer>
     <script>
         // ------for the menu----
         function show() {
