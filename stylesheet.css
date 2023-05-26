@@ -383,11 +383,14 @@
 
 /* -------Footer---- */
 footer {
-  margin-top: 5px;
+  
+  /* margin-top: 5px; */
   background-color: #C9324C;
-  padding: 20px;
+  padding-top: 20px;
 }
-
+hr{
+border: 1px solid black;
+}
 .footer-container {
   display: flex;
   flex-wrap: wrap;
