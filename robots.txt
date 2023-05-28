@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /private/
+Disallow: /secret-page.html
+Disallow: /images/
+
+allow: /index.html
+allow: /lovbakken.html
+allow: /hundeskov.html
+allow: /fuglesangso.html

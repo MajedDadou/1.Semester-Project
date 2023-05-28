@@ -54,7 +54,6 @@
   position: fixed;
   width: 300px;
   height: 100%;
-  /* background-color: #C9324C; */
   left: -300px;
   transition: .4s;
   z-index: 1;
@@ -221,10 +220,8 @@
 /* <!-- ------Image Gallery-------- --> */
 
 .gallery {
-  /* margin-top: 5px; */
   background-color: #C9324C;
   display: flex;
-  /* flex-wrap: wrap; */
 
 }
 
@@ -285,7 +282,6 @@
 }
 
 .invisible-box img {
-  /* width: 50%; */
   margin: 10px;
   background-color: rgb(0, 0, 0);
 }
@@ -340,7 +336,6 @@
 .text-box {
   position: relative;
   width: 33.33%;
-  /* margin-top: 5px; */
 
 
 }
@@ -362,15 +357,6 @@
 }
 
 
-/* .info-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  font-size: 18px;
-} */
 
 #background-1 {
   background-color: #4D327D;
@@ -388,7 +374,6 @@
 /* -------Footer---- */
 footer {
 
-  /* margin-top: 5px; */
   background-color: #C9324C;
   padding-top: 20px;
 }
@@ -496,7 +481,6 @@ input[type="submit"] {
   .container-hundeskov,
   .container-lovbakken {
     flex-direction: column;
-    /* background-color: #000000; */
 
   }
 
